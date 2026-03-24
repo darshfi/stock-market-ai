@@ -1,0 +1,55 @@
+# ============================================
+# IMPORTANT: For Arch Linux with Python 3.14+
+# ============================================
+# Install these via pacman FIRST:
+# sudo pacman -S python-pandas python-numpy python-lxml python-beautifulsoup4 \
+#                python-requests python-pydantic python-pytest python-httpx \
+#                python-dateutil python-pytz
+#
+# Then create venv with: python -m venv venv --system-site-packages
+# ============================================
+
+# Web Framework
+fastapi==0.109.0              # Modern Python web framework for building APIs
+uvicorn[standard]==0.27.0     # ASGI server to run FastAPI
+python-multipart==0.0.6       # For handling file uploads and form data
+
+# Database
+sqlalchemy==2.0.25            # ORM (Object-Relational Mapping) for database operations
+alembic==1.13.1               # Database migration tool (for future schema changes)
+
+# AI Integration
+google-generativeai==0.3.2    # Google Gemini API client
+
+# Stock Market Data
+yfinance==0.2.36              # Yahoo Finance API (free stock data)
+alpha-vantage==2.3.1          # Alpha Vantage API client
+# pandas: SYSTEM PACKAGE (installed via pacman)
+# numpy: SYSTEM PACKAGE (installed via pacman)
+
+# News Scraping
+# beautifulsoup4: SYSTEM PACKAGE (installed via pacman)
+# requests: SYSTEM PACKAGE (installed via pacman)
+feedparser==6.0.11            # RSS feed parser
+# lxml: SYSTEM PACKAGE (installed via pacman)
+
+# Scheduling & Background Tasks
+apscheduler==3.10.4           # Schedule periodic tasks (news fetching every 5 mins)
+
+# Environment Variables & Configuration
+python-dotenv==1.0.0          # Load environment variables from .env file
+# pydantic: SYSTEM PACKAGE (installed via pacman)
+pydantic-settings==2.1.0      # Settings management using Pydantic
+
+# CORS & Security
+python-jose[cryptography]==3.3.0  # JWT token handling (for future auth)
+passlib[bcrypt]==1.7.4        # Password hashing (for future user accounts)
+
+# Utilities
+# python-dateutil: SYSTEM PACKAGE (installed via pacman)
+# pytz: SYSTEM PACKAGE (installed via pacman)
+
+# Testing (Development only)
+# pytest: SYSTEM PACKAGE (installed via pacman)
+pytest-asyncio==0.23.3        # Async test support
+# httpx: SYSTEM PACKAGE (installed via pacman)
